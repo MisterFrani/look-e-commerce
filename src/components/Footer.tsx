@@ -5,7 +5,7 @@ import logo from "../../public/look-icon.svg";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-[#F8F9FB]  pt-16  mt-48 ">
-      <div className="max-w-[1830px] mx-auto  text-black">
+      <div className="max-w-[1630px] mx-auto text-black">
         <div className=" mx-auto flex flex-col md:flex-row justify-between  ml-3">
           <div className="flex justify-center items-center mb-6 md:mb-0 text-center">
             <Link to="/" className="flex items-center text-black text-2xl">
