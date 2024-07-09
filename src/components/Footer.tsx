@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../public/look-icon.svg";
 
 const Footer: React.FC = () => {
   return (
@@ -8,11 +9,7 @@ const Footer: React.FC = () => {
         <div className=" mx-auto flex flex-col md:flex-row justify-between  ml-3">
           <div className="flex justify-center items-center mb-6 md:mb-0 text-center">
             <Link to="/" className="flex items-center text-black text-2xl">
-              <img
-                src="../../public/look-icon.svg"
-                alt="Look"
-                className="h-10 mr-2 -mt-1"
-              />
+              <img src={logo} alt="Look" className="h-10 mr-2 -mt-1" />
               <span className="-ml-2 text-4xl">Look</span>
             </Link>
           </div>

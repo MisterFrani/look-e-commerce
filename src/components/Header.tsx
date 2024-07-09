@@ -3,6 +3,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import Cart from "./Cart";
 import { CartContext, CartContextType } from "../context/Context";
+import logo from "../../public/look-icon.svg";
 
 const Header: React.FC = () => {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -23,7 +24,7 @@ const Header: React.FC = () => {
       <nav className="flex justify-between items-center py-5 px-2  max-w-[1830px] mx-auto">
         <Link to="/" className="flex items-center text-black text-2xl">
           <img
-            src="../../public/look-icon.svg"
+            src={logo}
             alt="Look"
             className="h-6 mr-2 -mt-1"
           />
