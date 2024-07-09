@@ -53,10 +53,9 @@ const CookieModal: React.FC = () => {
           d’intérêts.
           <br />
           <br />
-          Vous pouvez accepter tous les cookies en cliquant sur "Tout accepter
-          et continuer", ou gérer vos préférences en cliquant sur "Paramétrer
-          les cookies". Si vous préférez ne pas accepter les cookies, vous
-          pouvez sélectionner "Continuer sans accepter".
+          Vous pouvez accepter tous les cookies en cliquant sur "Accepter et
+          continuer". Si vous préférez ne pas accepter les cookies, vous pouvez
+          sélectionner "Continuer sans accepter".
           <br />
           <br />
           Pour en savoir plus sur notre politique de cookies, veuillez consulter
@@ -67,7 +66,7 @@ const CookieModal: React.FC = () => {
             onClick={handleContinueWithoutCookies}
             className="text-black hover:underline text-sm underline"
           >
-            Tout accepter et continuer
+            Continuer sans accepter →
           </button>
           <button
             onClick={handleAcceptCookies}
