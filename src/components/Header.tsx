@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="sticky top-0 left-0 right-0 z-50 bg-white">
-      <nav className="flex justify-between items-center py-5 px-2 max-w-[1630px] mx-auto">
+      <nav className="flex justify-between items-center py-5 px-2 max-w-[1380px] mx-auto">
         <Link to="/" className="flex items-center text-black text-2xl">
           <img src={logo} alt="Look" className="h-6 mr-2 -mt-1" />
           <span className="-ml-2">Look</span>

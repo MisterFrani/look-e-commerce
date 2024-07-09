@@ -69,7 +69,7 @@ const ArticleDetailPage: React.FC = () => {
 
   return (
     <motion.div
-      className="flex flex-col px-2 max-w-[1830px] mx-auto"
+      className="flex flex-col px-2 max-w-[1380px] mx-auto"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
@@ -95,7 +95,7 @@ const ArticleDetailPage: React.FC = () => {
             ))}
           </Swiper>
         </div>
-        <div className=" pt-4 md:pt-0">
+        <div className=" pt-4 md:pt-0 pl-6">
           <h1 className="text-lg md:text-xl font-semibold pb-1">
             {article.name}
           </h1>
@@ -143,7 +143,7 @@ const ArticleDetailPage: React.FC = () => {
           )}
         </div>
       </div>
-      <div className="mt-20 md:mt-56 max-w-[1830px] mx-auto">
+      <div className="mt-20 md:mt-56 max-w-[1380px] mx-auto">
         <h2 className="text-2xl text-center font-semibold mb-12 md:mb-24">
           COMPLÉTEZ VOTRE LOOK
         </h2>
