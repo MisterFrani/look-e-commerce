@@ -7,6 +7,7 @@ import ArticleDetailPage from "./components/ArticleDetailPage";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import CookieModal from "./components/CookieModal";
+import FeaturesSection from "./components/FeaturesSection";
 
 function HomePage() {
   return (
@@ -30,7 +31,7 @@ function App() {
               <Route path="/" element={<HomePage />} />
               <Route path="/article/:id" element={<ArticleDetailPage />} />
             </Routes>
-
+            <FeaturesSection />
             <Footer />
           </div>
         </div>

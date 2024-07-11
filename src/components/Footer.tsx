@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../public/look-icon.svg";
+import { FaFacebook, FaInstagram, FaTiktok, FaXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#F8F9FB]  pt-16  mt-48 ">
+    <footer className="bg-[#F8F9FB]  pt-16">
       <div className="max-w-[1380px] mx-auto text-black">
         <div className=" mx-auto flex flex-col md:flex-row justify-between  ml-3">
-          <div className="flex justify-center items-center mb-6 md:mb-0 text-center">
+          <div className="flex justify-center items-center -ml-6 md:ml-0 md:-mt-20 mb-6 md:mb-0 text-center">
             <Link to="/" className="flex items-center text-black text-2xl">
               <img src={logo} alt="Look" className="h-10 mr-2 -mt-1" />
               <span className="-ml-2 text-4xl">Look</span>
@@ -62,6 +63,26 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
+          <div className=" md:text-left mb-6 md:mb-0">
+            <h3 className="text-sm font-semibold mb-2">Suivez-nous </h3>
+            <div className="flex gap-2">
+              <Link to="/" className="flex items-center text-black text-2xl">
+                <FaInstagram />
+              </Link>
+              <Link to="/" className="flex items-center text-black text-2xl">
+                <FaXTwitter />
+              </Link>
+
+              <Link to="/" className="flex items-center text-black text-2xl">
+                <FaFacebook />
+              </Link>
+
+              <Link to="/" className="flex items-center text-black text-2xl">
+                <FaTiktok />
+              </Link>
+            </div>
+          </div>
+
           <div className=" md:text-left">
             <h3 className="text-sm font-semibold mb-2">Restez informé</h3>
             <form className="flex justify-center md:justify-end -ml-4 md:ml-0">
@@ -76,9 +97,11 @@ const Footer: React.FC = () => {
             </form>
           </div>
         </div>
-        <div className="py-4 mt-7 md:mt-24  ml-3 md:ml-0">
+      </div>
+      <div className="py-4 mt-7 md:mt-24  ml-3 md:ml-0 border-t ">
+        <div className="max-w-[1380px] mx-auto text-black">
           <p className="text-gray-700 text-sm">
-            &copy; {new Date().getFullYear()} Look. Designed by{" "}
+            &copy; {new Date().getFullYear()} Look. Designed & build by{" "}
             <a
               href="https://bizifrani.com/"
               target="_blank"
